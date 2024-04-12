@@ -11,37 +11,15 @@ addons:
     - g++-4.8
 env:
   matrix:
-  - TRAVIS_NODE_VERSION="0.10"
-  - TRAVIS_NODE_VERSION="0.12"
-  - TRAVIS_NODE_VERSION="4"
-  - TRAVIS_NODE_VERSION="5"
-  - TRAVIS_NODE_VERSION="6"
-  - TRAVIS_NODE_VERSION="7"
-  - TRAVIS_NODE_VERSION="8"
-  - TRAVIS_NODE_VERSION="9"
-  - TRAVIS_NODE_VERSION="10"
-  - TRAVIS_NODE_VERSION="11"
-  - TRAVIS_NODE_VERSION="12"
-  - TRAVIS_NODE_VERSION="13"
-  - TRAVIS_NODE_VERSION="14"
-  - TRAVIS_NODE_VERSION="15"
-  - TRAVIS_NODE_VERSION="16"
-  - TRAVIS_NODE_VERSION="17"
   - TRAVIS_NODE_VERSION="18"
   - TRAVIS_NODE_VERSION="18.18.2"  ELECTRON_VERSION="29.2.0"
   - TRAVIS_NODE_VERSION="19"
   - TRAVIS_NODE_VERSION="20"
-  - TRAVIS_NODE_VERSION="lts/*" ELECTRON_VERSION="2.0.18"
-  - TRAVIS_NODE_VERSION="lts/*" ELECTRON_VERSION="3.1.13"
-  - TRAVIS_NODE_VERSION="lts/*" ELECTRON_VERSION="4.2.12"
-  - TRAVIS_NODE_VERSION="lts/*" ELECTRON_VERSION="5.0.13"
-  - TRAVIS_NODE_VERSION="lts/*" ELECTRON_VERSION="6.1.10"
-  - TRAVIS_NODE_VERSION="lts/*" ELECTRON_VERSION="7.2.3"
-  - TRAVIS_NODE_VERSION="lts/*" ELECTRON_VERSION="8.2.3"
+  - TRAVIS_NODE_VERSION="lts/*" ELECTRON_VERSION="29.2.0"
 matrix:
   exclude:
     - os: osx
-      env: TRAVIS_NODE_VERSION="0.12"
+      env: TRAVIS_NODE_VERSION="18.18.2"
 install:
   - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
   - if [[ $TRAVIS_OS_NAME == "linux" ]]; then export CXX=g++-4.8; fi
