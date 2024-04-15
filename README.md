@@ -42,7 +42,7 @@ Pull in the path to **NAN** in your *binding.gyp* so that you can use `#include 
 
 ``` python
 "include_dirs" : [
-    "<!(node -e \"require('nan')\")"
+    "<!(node -e \"require('@ingstory/nan')\")"
 ]
 ```
 

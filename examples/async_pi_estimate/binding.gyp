@@ -8,7 +8,7 @@
         "sync.cc",
         "async.cc"
       ],
-      "include_dirs": ["<!(node -e \"require('nan')\")"]
+      "include_dirs": ["<!(node -e \"require('@ingstory/nan')\")"]
     }
   ]
 }

@@ -32,7 +32,8 @@
     "@ingstory/node-gyp": "^10.1.0",
     "readable-stream": "^2.1.4",
     "tap": "~18.7.2",
-    "xtend": "~4.0.2"
+    "xtend": "~4.0.2",
+    "jackspeak": "^2.3.6"
   },
   "license": "MIT"
 }
