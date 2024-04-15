@@ -1,6 +1,6 @@
 {
   "name": "@ingstory/nan",
-  "version": "2.19.2",
+  "version": "2.19.3",
   "description": "Native Abstractions for Node.js: C++ header for Node 18 -> 20 compatibility",
   "main": "include_dirs.js",
   "repository": {
