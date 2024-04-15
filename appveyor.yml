@@ -6,7 +6,7 @@ image:
 # Test against these versions of Io.js and Node.js.
 environment:
   matrix:
-  # node.js
+    # node.js
     - nodejs_version: "18"
     - nodejs_version: "19"
     - nodejs_version: "20"
