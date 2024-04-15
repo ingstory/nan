@@ -1,11 +1,11 @@
 {
   "name": "nan",
   "version": "2.19.0",
-  "description": "Native Abstractions for Node.js: C++ header for Node 0.8 -> 20 compatibility",
+  "description": "Native Abstractions for Node.js: C++ header for Node 18 -> 20 compatibility",
   "main": "include_dirs.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/choyunsung/nan.git"
+    "url": "git://github.com/ingstory/nan.git"
   },
   "scripts": {
     "test": "tap --gc --stderr test/js/*-test.js",
@@ -29,7 +29,7 @@
     "commander": "^2.8.1",
     "glob": "^5.0.14",
     "request": "^2.88.2",
-    "node-gyp": "github:choyunsung/node-gyp",
+    "@ingstory/node-gyp": "^10.1.0",
     "readable-stream": "^2.1.4",
     "tap": "~18.7.2",
     "xtend": "~4.0.2"
