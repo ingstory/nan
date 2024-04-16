@@ -89,7 +89,7 @@ set(LINT_SOURCES examples/async_pi_estimate/addon.cc
 	test/cpp/weak.cpp 
 	test/cpp/weak2.cpp
     test/cpp/wrappedobjectfactory.cpp
-    node_modules/@ingstory/node-gyp/gyp/data/win/large-pdb-shim.cc)
+    node_modules/node-gyp/gyp/data/win/large-pdb-shim.cc)
         
 set(FILTER "-build/include_subdir,-whitespace/parens")
 
